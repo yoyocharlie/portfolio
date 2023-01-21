@@ -16,9 +16,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Navbar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
-      {showSidebar && <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />}
+      <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
       <div className='flex justify-center'>
-        <div className='mt-28 text-4xl font-bold'>
+        <div className='mt-48 text-4xl font-bold'>
           <h1 className={`text-jet ${animateCss}`}>Hey! I&apos;m <span className='text-amber'>Jacob</span>.</h1>
           <h1 className={`text-amber ${animateCss}`}>Front End Developer<span className='text-jet'>.</span></h1>
           <h1 className={`text-jet ${animateCss}`}>Avid Learner.</h1>
