@@ -11,6 +11,9 @@ module.exports = {
       },
       screens: {
         'xs': '250px'
+      },
+      fontFamily: {
+        "headText": ['headText']
       }
     },
 

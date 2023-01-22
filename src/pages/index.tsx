@@ -17,8 +17,8 @@ export default function Home() {
       </Head>
       <Navbar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
       <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
-      <div className='flex justify-center'>
-        <div className='mt-48 mx-5 text-4xl font-bold'>
+      <div className='flex justify-center overflow-hidden'>
+        <div className='mt-48 mx-5 text-4xl font-bold font-headText tracking-wider'>
           <h1 className={`text-jet ${animateCss}`}>Hey! I&apos;m <span className='text-amber'>Jacob</span>.</h1>
           <h1 className={`text-amber ${animateCss}`}>Front End Developer<span className='text-jet'>.</span></h1>
           <h1 className={`text-jet ${animateCss}`}>Avid Learner.</h1>
