@@ -17,12 +17,22 @@ export default function Home() {
       </Head>
       <Navbar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
       <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
-      <div className='flex justify-center overflow-hidden'>
-        <div className='mt-48 mx-5 text-4xl font-bold font-headText tracking-wider'>
+      <div className='flex flex-col items-center overflow-hidden h-screen'>
+        <div className='md:mt-48 mt-32 mx-5 text-4xl font-bold font-headText tracking-wider text-center'>
           <h1 className={`text-jet ${animateCss}`}>Hey! I&apos;m <span className='text-amber'>Jacob</span>.</h1>
           <h1 className={`text-amber ${animateCss}`}>Front End Developer<span className='text-jet'>.</span></h1>
           <h1 className={`text-jet ${animateCss}`}>Avid Learner.</h1>
         </div>
+        <div className='flex flex-col mx-16'>
+          <p className='font-paraText mt-10 text-lg'>&quot;Jacob&apos;s front-end development skills are so good, it&apos;s almost unfair to the competition.&quot;</p>
+          <p className='font-paraText mt-10 text-lg self-center'><i>- ChatGPT</i></p>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 animate-bounce absolute bottom-0">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+        </svg>
+      </div>
+      <div className='w-full bg-jet'>
+        Hello
       </div>
     </>
   )

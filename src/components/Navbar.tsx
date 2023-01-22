@@ -9,7 +9,7 @@ import React, { Dispatch, SetStateAction } from 'react'
     console.log(showSidebar)
 
   return (
-    <div className='py-2 px-10 flex shadow-xl items-center font-headText'>
+    <div className='py-2 px-10 flex shadow-xl items-center font-headText fixed w-full bg-white z-40'>
         <div className='mr-auto'>
             <span className='text-4xl text-jet font-headText mr-2 font-bold tracking-tighter'>J</span>
             <span className='text-4xl text-amber font-headText font-bold mr-auto tracking-tighter'>P</span>

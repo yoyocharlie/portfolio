@@ -6,3 +6,7 @@
     font-family: "headText";
     src: url("../fonts/Calistoga-Regular.ttf");
 }
+@font-face {
+    font-family: "paraText";
+    src: url("../fonts/Comfortaa-VariableFont_wght.ttf");
+}

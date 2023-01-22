@@ -13,7 +13,8 @@ module.exports = {
         'xs': '250px'
       },
       fontFamily: {
-        "headText": ['headText']
+        "headText": ['headText'],
+        "paraText": ['paraText']
       }
     },
 
