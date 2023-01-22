@@ -35,7 +35,7 @@ export default function Home() {
         </svg>
       </div>
       <div id='projects' className='w-full bg-jet flex flex-col items-center overflow-hidden'>
-        <h1 className='font-headText text-white text-4xl mt-10 mb-12'>Projects</h1>
+        <h1 className='font-headText text-white text-5xl mt-16 mb-12'>Projects</h1>
         <div className='flex flex-col md:flex-row gap-10 md:justify-evenly md:w-full'>
           <div className='bg-white mb-10 p-5 rounded-md flex flex-col'>
             <Image className='rounded mb-2' src={myTravelPic} alt='myTravels' width={300} height={300}/>
