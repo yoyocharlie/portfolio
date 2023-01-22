@@ -20,8 +20,8 @@ export default function Home() {
       </Head>
       <Navbar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
       <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
-      <div className='flex flex-col items-center overflow-hidden h-screen'>
-        <div className='md:mt-48 mt-32 mx-5 text-4xl font-bold font-headText tracking-wider text-center'>
+      <div className='flex flex-col items-center overflow-hidden h-screen justify-center'>
+        <div className='mx-5 text-4xl font-bold font-headText tracking-wider text-center'>
           <h1 className={`text-jet ${animateCss}`}>Hey! I&apos;m <span className='text-amber'>Jacob</span>.</h1>
           <h1 className={`text-amber ${animateCss}`}>Front End Developer<span className='text-jet'>.</span></h1>
           <h1 className={`text-jet ${animateCss}`}>Avid Learner.</h1>
@@ -34,7 +34,7 @@ export default function Home() {
           <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
         </svg>
       </div>
-      <div className='w-full bg-jet flex flex-col items-center overflow-hidden'>
+      <div id='projects' className='w-full bg-jet flex flex-col items-center overflow-hidden'>
         <h1 className='font-headText text-white text-4xl mt-10 mb-12'>Projects</h1>
         <div className='flex flex-col md:flex-row gap-10 md:justify-evenly md:w-full'>
           <div className='bg-white mb-10 p-5 rounded-md flex flex-col'>
