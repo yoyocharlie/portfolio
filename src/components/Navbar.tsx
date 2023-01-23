@@ -16,10 +16,10 @@ import { useScrollPosition } from '../hooks/useScrollPosition'
 
   return (
     <div className={`py-2 px-10 flex transition-shadow duration-700 ${scrollPosition > 1 && "shadow-xl"} items-center font-headText sticky top-0 w-full bg-white z-40`}>
-        <div className='mr-auto'>
+        <Link className='mr-auto' href={'/'}>
             <span className='text-4xl text-jet font-headText mr-2 font-bold tracking-tighter'>J</span>
             <span className='text-4xl text-amber font-headText font-bold mr-auto tracking-tighter'>P</span>
-        </div>
+        </Link>
         <div>
             <button onClick={() => setShowSidebar(!showSidebar)} className='text-amber md:hidden pt-2'>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-9 h-8">
@@ -40,7 +40,7 @@ import { useScrollPosition } from '../hooks/useScrollPosition'
             </svg>
             PROJECTS
         </Link>
-        <Link className="bg-amber text-white rounded-md text-xl p-2 flex items-center gap-5 mx-2 hover:cursor-pointer hover:bg-white hover:text-amber border border-amber hover:border-amber transition duration-200 ease-out hover:ease-in" href={''}>
+        <Link className="bg-amber text-white rounded-md text-xl p-2 flex items-center gap-5 mx-2 hover:cursor-pointer hover:bg-white hover:text-amber border border-amber hover:border-amber transition duration-200 ease-out hover:ease-in" target={"blank"} href={'https://drive.google.com/file/d/1Lf1LLMMyFE8X3hW7qzuVOoqf0cUPb4el/view'}>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
             </svg>
