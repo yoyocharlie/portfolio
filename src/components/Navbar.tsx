@@ -12,7 +12,6 @@ import { useScrollPosition } from '../hooks/useScrollPosition'
     console.log(showSidebar)
 
     const scrollPosition = useScrollPosition();
-    console.log(scrollPosition)
 
   return (
     <div className={`py-2 px-10 flex transition-shadow duration-700 ${scrollPosition > 1 && "shadow-xl"} items-center font-headText sticky top-0 w-full bg-white z-40`}>
