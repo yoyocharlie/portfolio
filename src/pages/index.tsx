@@ -2,14 +2,15 @@ import Navbar from '@/components/Navbar'
 import Sidebar from '@/components/Sidebar'
 import Head from 'next/head'
 import Image from 'next/image'
-import myTravelPic from 'public/images/myTravels2.JPG'
-import mindful from 'public/images/mindful2.JPG'
 import { useState } from 'react'
 
 export default function Home() {
   const [showSidebar, setShowSidebar] = useState<boolean>(false);
 
-  const animateCss = "md:transition md:ease-in-out md:hover:-translate-y-1 md:hover:scale-110 md:duration-300"
+  const animateHeaders = "md:transition md:ease-in-out md:hover:-translate-y-1 md:hover:scale-110 md:duration-300"
+  const myTravelsImage = require("../../public/images/myTravels2.JPG");
+  const mindfulImage = require("../../public/images/mindful2.JPG");
+  const portfolioImage = require("../../public/images/protfolio.PNG");
 
   return (
     <>
@@ -22,30 +23,35 @@ export default function Home() {
       <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
       <div className='flex flex-col items-center overflow-hidden h-screen justify-center'>
         <div className='mx-5 text-4xl font-bold font-headText tracking-wider text-center'>
-          <h1 className={`text-jet ${animateCss}`}>Hey! I&apos;m <span className='text-amber'>Jacob</span>.</h1>
-          <h1 className={`text-amber ${animateCss}`}>Front End Developer<span className='text-jet'>.</span></h1>
-          <h1 className={`text-jet ${animateCss}`}>Avid Learner.</h1>
+          <h1 className={`text-jet ${animateHeaders}`}>Hey! I&apos;m <span className='text-amber'>Jacob</span>.</h1>
+          <h1 className={`text-amber ${animateHeaders}`}>Front End Developer<span className='text-jet'></span></h1>
+          <h1 className={`text-jet ${animateHeaders}`}>& Avid Learner.</h1>
         </div>
         <div className='flex flex-col mx-16'>
-          <p className='font-paraText mt-10 text-lg'>&quot;Jacob&apos;s front-end development skills are so good, it&apos;s almost unfair to the competition.&quot;</p>
-          <p className='font-paraText mt-10 text-lg self-center'><i>- ChatGPT</i></p>
+          <p className='font-paraText text-jet mt-10 text-lg'>&quot;Jacob&apos;s front-end development skills are so good, it&apos;s almost unfair to the competition.&quot;</p>
+          <p className='font-paraText text-jet mt-10 text-lg self-center'><i>- ChatGPT</i></p>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 animate-bounce absolute bottom-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 animate-bounce absolute bottom-2">
           <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
         </svg>
       </div>
-      <div id='projects' className='w-full bg-jet flex flex-col items-center overflow-hidden'>
-        <h1 className='font-headText text-white text-5xl mt-16 mb-12'>Projects</h1>
+      <div id='projects' className='w-full bg-gradient-to-br from-sky-800 via-jet to-sky-300 flex flex-col items-center overflow-hidden'>
+        <h1 className='font-headText text-amber text-5xl mt-16 mb-12'>Projects</h1>
         <div className='flex flex-col md:flex-row gap-10 md:justify-evenly md:w-full'>
-          <div className='bg-white mb-10 p-5 rounded-md flex flex-col'>
-            <Image className='rounded mb-2' src={myTravelPic} alt='myTravels' width={300} height={300}/>
+          <div className='bg-white mb-10 p-5 rounded-md flex flex-col transition ease-in-out duration-200 hover:-translate-y-6 hover:shadow-2xl hover:scale-105 hover:cursor-pointer'>
+            <Image className='rounded mb-2 md:w-full' src={myTravelsImage} alt='myTravels' width={300} height={300}/>
             <h3 className='font-headText text-amber text-3xl mb-10'>myTravels</h3>
-            <p className='font-paraText text-xl w-[300px]'>A photojournaling app created with React.js</p>
+            <p className='font-paraText text-xl w-[300px]'>A photojournaling app created with React.js, JavaScript, TailwindCSS, & Firebase.</p>
           </div>
-          <div className='bg-white mb-10 p-5 rounded-md flex flex-col'>
-            <Image className='rounded mb-2' src={mindful} alt='myTravels' width={300} height={300}/>
+          <div className='bg-white mb-10 p-5 rounded-md flex flex-col transition ease-in-out duration-200 hover:-translate-y-6 hover:shadow-2xl hover:scale-105 hover:cursor-pointer'>
+            <Image className='rounded mb-2 md:w-full' src={mindfulImage} alt='myTravels' width={300} height={300}/>
             <h3 className='font-headText text-amber text-3xl mb-10'>mindful.</h3>
-            <p className='font-paraText text-xl w-[300px]'>A photojournaling app created with React.js</p>
+            <p className='font-paraText text-xl w-[300px]'>A quote generation app.</p>
+          </div>
+          <div className='bg-white mb-10 p-5 rounded-md flex flex-col transition ease-in-out duration-200 hover:-translate-y-6 hover:shadow-2xl hover:scale-105 hover:cursor-pointer'>
+            <Image className='rounded mb-2 md:w-full' src={portfolioImage} alt='myTravels' width={300} height={300}/>
+            <h3 className='font-headText text-amber text-3xl mb-10'>My Portfolio</h3>
+            <p className='font-paraText text-xl w-[300px]'>I used Nextjs, TypeScript, TailwindCSS, & something else I'm sure</p>
           </div>
         </div>
       </div>
