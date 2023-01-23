@@ -9,7 +9,6 @@ import { useScrollPosition } from '../hooks/useScrollPosition'
 }
 
     const Navbar: React.FC<Sidebar> = ({showSidebar, setShowSidebar}) => {
-    console.log(showSidebar)
 
     const scrollPosition = useScrollPosition();
 

@@ -2,10 +2,12 @@ import Hero from '@/components/Hero'
 import Navbar from '@/components/Navbar'
 import Projects from '@/components/Projects'
 import Sidebar from '@/components/Sidebar'
+import Card from '@/components/Card'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
+import cards from './cardData.js'
 
 export default function Home() {
   const [showSidebar, setShowSidebar] = useState<boolean>(false);
@@ -23,4 +25,20 @@ export default function Home() {
       <Projects />
     </>
   )
+}
+
+
+
+export async function getStaticProps() {
+  const data = cards.map(v => {
+    return (
+      <Card
+        key={v.name}
+        name={v.name}
+        blurb={v.blurb}
+        github={v.github}
+      />
+    )
+  })
+  return data;
 }
