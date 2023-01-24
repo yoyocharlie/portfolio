@@ -1,15 +1,20 @@
 import Hero from '@/components/Hero'
 import Navbar from '@/components/Navbar'
-import Projects from '@/components/Projects'
 import Sidebar from '@/components/Sidebar'
 import Card from '@/components/Card'
+import Projects from '@/components/Projects'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
-import cards from './cardData.js'
+import cardData from './cardData.js'
+import { GetStaticProps } from 'next'
 
-export default function Home() {
+export interface ProjectCards {
+  cards: []
+}
+
+const Home: React.FC<ProjectCards> = ({ cards }) => {
   const [showSidebar, setShowSidebar] = useState<boolean>(false);
 
   return (
@@ -22,23 +27,18 @@ export default function Home() {
       <Navbar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
       <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
       <Hero />
-      <Projects />
+      <Projects cards={cards} />
     </>
   )
 }
 
+export default Home
 
 
-export async function getStaticProps() {
-  const data = cards.map(v => {
-    return (
-      <Card
-        key={v.name}
-        name={v.name}
-        blurb={v.blurb}
-        github={v.github}
-      />
-    )
-  })
-  return data;
+
+export const getStaticProps: GetStaticProps = async () => {
+  const cards = cardData
+  return {
+    props: {cards}
+  }
 }
