@@ -25,7 +25,7 @@ interface CardsProps {
         <p className='font-paraText text-jet text-sm md:text-lg lg:text-xl max-w-[300px]'>{blurb}</p>
       </div>
       <div className='self-end mt-5 rounded-md'>
-        <Link href={github} target='blank' className=''><FontAwesomeIcon className='text-amber text-4xl' icon={faGithub} /></Link>
+        <Link href={github} target='blank' className=''><FontAwesomeIcon className='text-greyWhite text-4xl' icon={faGithub} /></Link>
       </div>
     </div>
   )
