@@ -12,7 +12,7 @@ const cardData =
         name: "My Portfolio",
         blurb: "This VERY portfolio! Created with Next.js, TypeScript, & TailwindCSS.",
         github: "https://github.com/yoyocharlie/portfolio",
-        image: "/images/protfolio.PNG"
+        image: "/images/portfolio.PNG"
     },
     {
         id: 3,

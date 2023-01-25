@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'tablet': '377px'
+      },
       colors: {
         "amber": "#fcbf49",
         "jet": "#457b9d",
