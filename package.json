@@ -5,8 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "httpserver": "http-server C:\\Users\\jacob\\Desktop\\MyCode\\next-portfolio\\out"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
@@ -21,6 +23,8 @@
     "eslint": "8.32.0",
     "eslint-config-next": "13.1.3",
     "next": "13.1.3",
+    "next-compose-plugins": "^2.2.1",
+    "next-optimized-images": "^1.4.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "4.9.4"

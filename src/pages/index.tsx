@@ -7,8 +7,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
-import cardData from './cardData.js'
+import cardData from '../cardData.js'
 import { GetStaticProps } from 'next'
+import About from '@/components/About'
 
 export interface ProjectCards {
   cards: []
@@ -27,6 +28,7 @@ const Home: React.FC<ProjectCards> = ({ cards }) => {
       <Navbar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
       <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
       <Hero />
+      {/* <About /> */}
       <Projects cards={cards} />
     </>
   )

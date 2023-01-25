@@ -6,6 +6,10 @@ html {
     scroll-behavior: smooth !important;
 }
 
+body {
+    background-color: #0a192f;
+}
+
 @font-face {
     font-family: "headText";
     src: url("../fonts/Calistoga-Regular.ttf");

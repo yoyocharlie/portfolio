@@ -7,7 +7,12 @@ module.exports = {
     extend: {
       colors: {
         "amber": "#fcbf49",
-        "jet": "#457b9d"
+        "jet": "#457b9d",
+        "darkBlue": "#0a192f",
+        "lessDarkBlue": "#0e1e37",
+        "techGreen": "#64ffda",
+        "techGrey": "#8892b0",
+        "greyWhite": "#ccd6f6"
       },
       screens: {
         'xs': '250px'

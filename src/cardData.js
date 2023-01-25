@@ -3,23 +3,23 @@ const cardData =
     {
         id: 1,
         name: "myTravels",
-        blurb: "A photojournaling app created with React.js, JavaScript, TailwindCSS, & Firebase.",
+        blurb: "Photo journaling app created with React.js, JavaScript, TailwindCSS, & Firebase.",
         github: "https://github.com/yoyocharlie/myTravels",
-        image: "myTravels2.JPG"
+        image: "/images/myTravels2.JPG"
     },
     {
         id: 2,
         name: "My Portfolio",
-        blurb: "I used Nextjs, TypeScript, TailwindCSS, & something else I'm sure",
+        blurb: "This VERY portfolio! Created with Next.js, TypeScript, & TailwindCSS.",
         github: "https://github.com/yoyocharlie/portfolio",
-        image: "protfolio.PNG"
+        image: "/images/protfolio.PNG"
     },
     {
         id: 3,
         name: "mindful.",
-        blurb: "A quote generation app",
+        blurb: "Quote generation app created with JavaScript, jQuery, HTML, & SCSS.",
         github: "https://github.com/yoyocharlie/mindful",
-        image: "mindful2.JPG"
+        image: "/images/mindful2.JPG"
     },
 ]
 
