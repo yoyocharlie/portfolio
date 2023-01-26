@@ -6,7 +6,7 @@ const Hero = () => {
     useEffect(() => {
         setTimeout(() => {
           heroRef.current?.classList.remove('opacity-0')
-        }, 500)
+        }, 100)
       }, []);
   return (
     <div ref={heroRef} className='flex flex-col items-center overflow-hidden h-screen justify-center bg-darkBlue opacity-0 transition-opacity duration-500 ease-in'>
