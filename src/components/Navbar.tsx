@@ -3,6 +3,7 @@ import React, { Dispatch, SetStateAction } from 'react'
 import { useScrollPosition } from '../hooks/useScrollPosition'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 import { faDiscord, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 
@@ -35,11 +36,9 @@ import { faDiscord, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-ic
                 <Link target={"_blank"} href={'https://www.linkedin.com/in/jacob-pixler-094348219/'}><FontAwesomeIcon className={`text-greyWhite text-4xl px-8`} icon={faLinkedin} /></Link>
                 <Link target={"_blank"} href={'https://discordapp.com/users/825450304307724288'}><FontAwesomeIcon className={`text-greyWhite text-4xl`} icon={faDiscord} /></Link>
             </div>
-            <Link className={`${showSidebar && "hidden"} bg-techGreen text-darkBlue rounded-md text-xl p-2 flex items-center gap-5 mx-2 hover:cursor-pointer hover:bg-darkBlue hover:text-techGreen border border-techGreen transition duration-200 ease-out hover:ease-in`} href={'#about'}>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-                </svg>
-                ABOUT
+            <Link className={`${showSidebar && "hidden"} bg-techGreen text-darkBlue rounded-md text-xl p-2 flex items-center gap-5 mx-2 hover:cursor-pointer hover:bg-darkBlue hover:text-techGreen border border-techGreen transition duration-200 ease-out hover:ease-in`} href={'#contact'}>
+                <FontAwesomeIcon icon={faEnvelope} />
+                CONTACT
             </Link>
             <Link className={`${showSidebar && "hidden"} bg-techGreen text-darkBlue rounded-md text-xl p-2 flex items-center gap-5 mx-2 hover:cursor-pointer hover:bg-darkBlue hover:text-techGreen border border-techGreen transition duration-200 ease-out hover:ease-in`} href={'#projects'}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
