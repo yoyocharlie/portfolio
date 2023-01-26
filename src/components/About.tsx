@@ -11,7 +11,7 @@ const About = () => {
       <h1 className='font-headText text-techGreen text-3xl md:text-5xl mt-20 mb-14 text-center md:self-start md:absolute md:left-36 mx-10 md:mx-0'>GET TO KNOW ME</h1>
       <div className='flex flex-col max-w-[350px] md:max-w-[1430px] lg:grid xl:grid-cols-2 gap-10 mx-5 md:mx-20 md:mt-40'>
         <div className='flex flex-col'>
-          <p className='font-paraText text-techGrey text-sm md:max-w-[700px] md:text-lg lg:text-xl'>For the last 7 months, I&apos;ve been intensively studying Fullstack Software Development at a bootcamp called <Link target={"_blank"} className='text-techGreen underline' href={'https://codex.academy/'}>CodeX Academy</Link>. I have honed my skills in development by learning to write, problem-sovle, and create with technologies such as the <Link target={"_blank"} className='text-techGreen underline' href={'https://create.t3.gg/'}>T3 Stack</Link> and more:</p>
+          <p className='font-paraText text-techGrey text-sm md:max-w-[700px] md:text-lg lg:text-xl'>For the last 7 months, I&apos;ve been intensively studying Fullstack Software Development at a bootcamp called <Link target={"_blank"} className='text-techGreen underline' href={'https://codex.academy/'}>CodeX Academy</Link>. I have honed my skills in development by learning to write, problem-solve, and create with technologies such as the <Link target={"_blank"} className='text-techGreen underline' href={'https://create.t3.gg/'}>T3 Stack</Link> and more:</p>
           <ul className='text-techGreen text-sm md:text-lg lg:text-xl mt-10 md:ml-10 grid grid-cols-2 text-center md:text-start md:grid-cols-4 gap-y-5'>
             <li><FontAwesomeIcon icon={faReact} /> React.js</li>
             <li>Next.js</li>
