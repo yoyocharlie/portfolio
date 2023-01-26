@@ -5,9 +5,9 @@ import Link from 'next/link'
 import React from 'react'
 
 const Form = () => {    const [state, handleSubmit] = useForm("mdovaoap");
-if (state.succeeded) {
-    return <Form />;
-}
+    if (state.succeeded) {
+        return <Form />;
+    }
     
   return (
     <form className='mx-auto flex flex-col' name="contact" action='https://formspree.io/f/mdovaoap' method='POST' onSubmit={handleSubmit}>
