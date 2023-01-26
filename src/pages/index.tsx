@@ -11,12 +11,15 @@ import cardData from '../cardData.js'
 import { GetStaticProps } from 'next'
 import About from '@/components/About'
 import Contact from '@/components/Contact'
+import { useRouter } from 'next/router.js'
 
 export interface ProjectCards {
   cards: []
 }
 
 const Home: React.FC<ProjectCards> = ({ cards }) => {
+  const router = useRouter();
+  const canonicalUrl = (`https://jacobpixler.com` + (router.asPath === "/" ? "": router.asPath)).split("?")[0];
   const [showSidebar, setShowSidebar] = useState<boolean>(false);
 
   return (
@@ -25,6 +28,7 @@ const Home: React.FC<ProjectCards> = ({ cards }) => {
         <title>Jacob Pixler</title>
         <meta name="description" content="Jacob Pixler Fullstack Developer" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href={canonicalUrl} />
       </Head>
         <Navbar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
         <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
