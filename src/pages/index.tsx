@@ -10,6 +10,7 @@ import { useState } from 'react'
 import cardData from '../cardData.js'
 import { GetStaticProps } from 'next'
 import About from '@/components/About'
+import Contact from '@/components/Contact'
 
 export interface ProjectCards {
   cards: []
@@ -30,6 +31,7 @@ const Home: React.FC<ProjectCards> = ({ cards }) => {
         <Hero />
         <About />
         <Projects cards={cards} />
+        <Contact />
     </>
   )
 }

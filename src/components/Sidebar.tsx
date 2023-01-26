@@ -45,7 +45,7 @@ const Sidebar: React.FC<Sidebar> = ({showSidebar, setShowSidebar}) => {
         <div className='flex justify-around'>
             <Link target={"_blank"} href={'https://github.com/yoyocharlie'}><FontAwesomeIcon className='text-greyWhite text-4xl' icon={faGithub} /></Link>
             <Link target={"_blank"} href={'https://www.linkedin.com/in/jacob-pixler-094348219/'}><FontAwesomeIcon className='text-greyWhite text-4xl' icon={faLinkedin} /></Link>
-            <Link target={"_blank"} href={'discordapp.com/users/825450304307724288'}><FontAwesomeIcon className='text-greyWhite text-4xl' icon={faDiscord} /></Link>
+            <Link target={"_blank"} href={'https://discordapp.com/users/825450304307724288'}><FontAwesomeIcon className='text-greyWhite text-4xl' icon={faDiscord} /></Link>
         </div>
     </div>
   )

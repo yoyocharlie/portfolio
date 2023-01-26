@@ -11,6 +11,7 @@
     "httpserver": "http-server C:\\Users\\jacob\\Desktop\\MyCode\\next-portfolio\\out"
   },
   "dependencies": {
+    "@formspree/react": "^2.4.1",
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
     "@fortawesome/free-brands-svg-icons": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",

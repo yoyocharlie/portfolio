@@ -25,6 +25,9 @@ module.exports = {
         "paraText": ['paraText']
       },
       keyframes: {
+        slide: {
+          '0%, 50%': { transform: 'translateX(5%)' }
+        },
         wiggle: {
           '50%': { transform: 'rotate(3deg)' },
         },
