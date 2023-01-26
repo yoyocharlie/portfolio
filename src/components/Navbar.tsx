@@ -19,8 +19,10 @@ import { faDiscord, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-ic
   return (
     <div className={`py-4 px-5 md:px-20 bg-darkBlue bg-opacity-0 flex transition-shadow duration-700 backdrop-blur-sm ${scrollPosition > 1 && "shadow-2xl"} items-center font-headText sticky top-0 w-full bg-white z-40`}>
         <Link className='mr-auto' href={'/'}>
-            <span className='text-3xl md:text-4xl lg:text-5xl text-greyWhite font-headText mr-2 font-bold tracking-tighter'>J</span>
-            <span className='text-3xl md:text-4xl lg:text-5xl text-techGreen font-headText font-bold mr-auto tracking-tighter'>P</span>
+            <button onClick={() => showSidebar && setShowSidebar(!showSidebar)}>
+                <span className='text-3xl md:text-4xl lg:text-5xl text-greyWhite font-headText mr-2 font-bold tracking-tighter'>J</span>
+                <span className='text-3xl md:text-4xl lg:text-5xl text-techGreen font-headText font-bold mr-auto tracking-tighter'>P</span>
+            </button>
         </Link>
         <div>
             <button onClick={() => setShowSidebar(!showSidebar)} className={`text-techGreen lg:hidden p-0 pt-1 ${scrollPosition > 1 && "hidden"}`}>
