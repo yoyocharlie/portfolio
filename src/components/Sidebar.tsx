@@ -24,18 +24,18 @@ const Sidebar: React.FC<Sidebar> = ({showSidebar, setShowSidebar}) => {
 
             <h3>Close</h3>
         </button>
-        <Link className="bg-techGreen border border-techGreen text-darkBlue rounded-md text-xl p-3 mb-5 flex items-center gap-5 mx-4 hover:cursor-pointer hover:bg-darkBlue hover:text-techGreen mt-8 transition duration-200 ease-out hover:ease-in" href={'#contact'}>
-            <button onClick={() => setShowSidebar(!showSidebar)}>
-                <FontAwesomeIcon className='ml-3 mr-5' icon={faEnvelope} />
-                CONTACT
-            </button>
-        </Link>
-        <Link className="bg-techGreen border border-techGreen text-darkBlue rounded-md text-xl p-3 mb-5 flex items-center gap-5 mx-4 hover:cursor-pointer hover:bg-darkBlue hover:text-techGreen transition duration-200 ease-out hover:ease-in" href={'#projects'}>
+        <Link className="bg-techGreen border border-techGreen text-darkBlue rounded-md mt-8 text-xl p-3 mb-5 flex items-center gap-5 mx-4 hover:cursor-pointer hover:bg-darkBlue hover:text-techGreen transition duration-200 ease-out hover:ease-in" href={'#projects'}>
             <button className='flex' onClick={() => setShowSidebar(!showSidebar)}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 ml-3 mr-5">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
                 </svg>
                 PROJECTS
+            </button>
+        </Link>
+        <Link className="bg-techGreen border border-techGreen text-darkBlue rounded-md text-xl p-3 mb-5 flex items-center gap-5 mx-4 hover:cursor-pointer hover:bg-darkBlue hover:text-techGreen transition duration-200 ease-out hover:ease-in" href={'#contact'}>
+            <button onClick={() => setShowSidebar(!showSidebar)}>
+                <FontAwesomeIcon className='ml-3 mr-5' icon={faEnvelope} />
+                CONTACT
             </button>
         </Link>
         <Link className="bg-darkBlue border border-techGreen text-techGreen rounded-md text-xl p-3 mb-5 flex items-center gap-5 mx-4 hover:cursor-pointer hover:bg-techGreen hover:text-darkBlue transition duration-200 ease-out hover:ease-in" target={"blank"} href={'https://drive.google.com/file/d/1nMr3QybJfd7rubsAJKub0Kl5zsTjh3Gn/view?usp=sharing'}>
@@ -48,9 +48,9 @@ const Sidebar: React.FC<Sidebar> = ({showSidebar, setShowSidebar}) => {
         </Link>
         <h3 className='text-jet text-2xl tracking-wider font-bold ml-4 mt-10 mb-5'>SOCIAL</h3>
         <div className='flex justify-around'>
-            <Link target={"_blank"} href={'https://github.com/yoyocharlie'}><FontAwesomeIcon className='text-greyWhite text-4xl' icon={faGithub} /></Link>
-            <Link target={"_blank"} href={'https://www.linkedin.com/in/jacob-pixler-094348219/'}><FontAwesomeIcon className='text-greyWhite text-4xl' icon={faLinkedin} /></Link>
-            <Link target={"_blank"} href={'https://discordapp.com/users/825450304307724288'}><FontAwesomeIcon className='text-greyWhite text-4xl' icon={faDiscord} /></Link>
+            <Link target={"_blank"} href={'https://github.com/yoyocharlie'}><FontAwesomeIcon className='text-greyWhite text-4xl hover:text-white transition duration-200 ease-out hover:ease-in' icon={faGithub} /></Link>
+            <Link target={"_blank"} href={'https://www.linkedin.com/in/jacob-pixler-094348219/'}><FontAwesomeIcon className='text-greyWhite text-4xl hover:text-white transition duration-200 ease-out hover:ease-in' icon={faLinkedin} /></Link>
+            <Link target={"_blank"} href={'https://discordapp.com/users/825450304307724288'}><FontAwesomeIcon className='text-greyWhite text-4xl hover:text-white transition duration-200 ease-out hover:ease-in' icon={faDiscord} /></Link>
         </div>
     </div>
   )

@@ -25,9 +25,9 @@ const Form = () => {    const [state, handleSubmit] = useForm("mdovaoap");
         </div>
         <div className='flex'>
             <div className={`flex items-center mr-auto`}>
-                <Link target={"_blank"} href={'https://github.com/yoyocharlie'}><FontAwesomeIcon className={`text-greyWhite text-xl md:text-3xl`} icon={faGithub} /></Link>
-                <Link target={"_blank"} href={'https://www.linkedin.com/in/jacob-pixler-094348219/'}><FontAwesomeIcon className={`text-greyWhite text-xl md:text-3xl px-8`} icon={faLinkedin} /></Link>
-                <Link target={"_blank"} href={'https://discordapp.com/users/825450304307724288'}><FontAwesomeIcon className={`text-greyWhite text-xl md:text-3xl`} icon={faDiscord} /></Link>
+                <Link target={"_blank"} href={'https://github.com/yoyocharlie'}><FontAwesomeIcon className={`text-greyWhite text-xl md:text-3xl hover:text-white transition duration-200 ease-out hover:ease-in`} icon={faGithub} /></Link>
+                <Link target={"_blank"} href={'https://www.linkedin.com/in/jacob-pixler-094348219/'}><FontAwesomeIcon className={`text-greyWhite text-xl md:text-3xl px-8 hover:text-white transition duration-200 ease-out hover:ease-in`} icon={faLinkedin} /></Link>
+                <Link target={"_blank"} href={'https://discordapp.com/users/825450304307724288'}><FontAwesomeIcon className={`text-greyWhite text-xl md:text-3xl hover:text-white transition duration-200 ease-out hover:ease-in`} icon={faDiscord} /></Link>
             </div>
             <button className='text-darkBlue font-headText rounded-md bg-techGreen p-2 text-lg'>SUBMIT</button>
         </div>
