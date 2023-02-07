@@ -36,7 +36,7 @@ const Home: React.FC<ProjectCards> = ({ cards }) => {
         <About />
         <Projects cards={cards} />
         <Contact />
-        <footer className='text-center text-techGrey font-paraText text-sm'>©2023 Jacob Pixler. All jams preserved</footer>
+        <footer className='text-center text-techGrey font-paraText text-sm p-2'>©2023 Jacob Pixler. All jams preserved</footer>
     </>
   )
 }
