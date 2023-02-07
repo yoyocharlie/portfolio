@@ -12,7 +12,7 @@ const Hero = () => {
     <div ref={heroRef} className='flex flex-col items-center overflow-hidden h-screen justify-center bg-darkBlue opacity-0 transition-opacity duration-500 ease-in'>
         <div className='mx-5 -mt-20 text-4xl font-bold font-headText tracking-wider text-center'>
             <h1 className={`text-greyWhite md:hover:animate-wiggle`}>Hey! I&apos;m <span className='text-techGreen'>Jacob</span>.</h1>
-            <h1 className={`text-techGreen md:hover:animate-shake`}>Fullstack Developer<span className='text-jet'></span></h1>
+            <h1 className={`text-techGreen md:hover:animate-shake`}>Full-stack Developer<span className='text-jet'></span></h1>
             <h1 className={`text-greyWhite md:hover:animate-explode`}>& Avid Learner.</h1>
         </div>
         <div className='flex flex-col mx-16 text-center'>
