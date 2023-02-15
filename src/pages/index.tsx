@@ -26,8 +26,11 @@ const Home: React.FC<ProjectCards> = ({ cards }) => {
     <>
       <Head>
         <title>Jacob Pixler</title>
-        <meta name="description" content="Jacob Pixler Fullstack Developer" />
+        <meta name="description" content="Jacob Pixler's Portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content="Jacob Pixler's Portfolio" key="title" />
+        <meta property="og:description" content="I'm just a coffee looking forward to my next programmer." key="description" />
+        <meta property="og:image" content="/images/HeadImage.PNG" key="image" />
         <link rel="canonical" href={canonicalUrl} />
       </Head>
         <Navbar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
