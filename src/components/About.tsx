@@ -9,7 +9,7 @@ import { faPersonSkiing, faPlaneDeparture, faSliders, faWandSparkles } from '@fo
 const About = () => {
   return (
     <div id='about' className='w-full pb-10 relative bg-lessDarkBlue flex flex-col items-center overflow-hidden'>
-      <h1 className='font-headText text-techGreen text-3xl md:text-5xl mt-20 mb-14 text-center md:self-start md:absolute md:left-36 mx-10 md:mx-0'>I'm <TypeAnimation
+      <h1 className='font-headText text-techGreen text-3xl md:text-5xl mt-20 mb-14 text-center md:self-start md:absolute md:left-36 mx-10 md:mx-0'>I&apos;m <TypeAnimation
         sequence={[
           "a Software Developer 💻",
           2000,
