@@ -12,8 +12,8 @@ const Hero = () => {
     <div ref={heroRef} className='flex flex-col items-center overflow-hidden h-screen justify-center bg-darkBlue opacity-0 transition-opacity duration-500 ease-in'>
         <div className='mx-5 -mt-20 text-4xl font-bold font-headText tracking-wider text-center'>
             <h1 className={`text-greyWhite md:hover:animate-wiggle`}>Hey! I&apos;m <span className='text-techGreen'>Jacob</span>.</h1>
-            <h1 className={`text-techGreen md:hover:animate-shake`}>Full-stack Developer<span className='text-jet'></span></h1>
-            <h1 className={`text-greyWhite md:hover:animate-explode`}>& Avid Learner.</h1>
+            <h1 className={`text-techGreen transition-all ease-in-out hover:drop-shadow-[3px_3px_white] hover:scale-110`}>Full-stack Developer<span className='text-jet'></span></h1>
+            <div id='avidLearner' className='overflow-hidden transition-all ease-in-out duration-500'><h1 className={`text-greyWhite transition-all ease-in-out duration-500 drop-shadow-[0_50px_#0a192f]`}>& Avid Learner.</h1></div>
         </div>
         <div className='flex flex-col mx-16 text-center'>
             <p className='font-paraText text-jet mt-10 text-lg'>&quot;Jacob&apos;s development skills are so good, it&apos;s almost unfair to the competition.&quot;</p>

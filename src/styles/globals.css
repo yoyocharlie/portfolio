@@ -18,3 +18,11 @@ body {
     font-family: "paraText";
     src: url("../fonts/Comfortaa-VariableFont_wght.ttf");
 }
+
+#avidLearner:hover h1 {
+    transform: translateY(-50px) !important;
+}
+
+#avidLearner:hover {
+    background-color: #64ffda;
+}

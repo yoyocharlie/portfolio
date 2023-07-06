@@ -21,6 +21,13 @@ const cardData =
         github: "https://github.com/yoyocharlie/mindful",
         image: "/images/mindful2.JPG"
     },
+    {
+        id: 4,
+        name: "Gena",
+        blurb: "Label management application made with MongoDB, Express, React, Next.js, & Node.js",
+        github: "https://github.com/yoyocharlie",
+        image: "/images/gena.png"
+    }
 ]
 
 export default cardData
