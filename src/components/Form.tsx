@@ -2,11 +2,17 @@ import { useForm } from '@formspree/react'
 import { faDiscord, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 
-const Form = () => {    const [state, handleSubmit] = useForm("mdovaoap");
+const Form = () => {    
+    const [state, handleSubmit] = useForm("mdovaoap");
+
     if (state.succeeded) {
-        return <Form />;
+        return (
+            <div>
+                <h2 className='text-techGreen text-center text-lg'>Thank you for reaching out! I'll be in touch :)</h2>
+            </div>
+        );
     }
     
   return (
