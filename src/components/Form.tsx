@@ -10,7 +10,7 @@ const Form = () => {
     if (state.succeeded) {
         return (
             <div>
-                <h2 className='text-techGreen text-center text-lg'>Thank you for reaching out! I'll be in touch :)</h2>
+                <h2 className='text-techGreen text-center text-lg'>Thank you for reaching out! I&apos;ll be in touch :)</h2>
             </div>
         );
     }
