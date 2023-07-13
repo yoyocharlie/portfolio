@@ -7,7 +7,7 @@ import Form from './Form'
 
 const Contact = () => {
   return (
-    <div id='contact' className='w-full pb-10 bg-lessDarkBlue flex flex-col items-center overflow-hidden'>
+    <div id='contact' className='w-full bg-opacity-70 backdrop-blur-sm pb-10 bg-lessDarkBlue flex flex-col items-center overflow-hidden'>
         <h1 className='text-techGreen font-headText text-3xl md:text-5xl mt-20 mb-10'>LET&apos;S CHAT!</h1>
         <div className='lg:w-2/4 md:w-3/4 w-10/12'>
             <Form />

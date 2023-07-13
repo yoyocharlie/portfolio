@@ -9,7 +9,7 @@ const Hero = () => {
         }, 100)
       }, []);
   return (
-    <div ref={heroRef} className='flex flex-col items-center overflow-hidden h-screen justify-center bg-darkBlue opacity-0 transition-opacity duration-500 ease-in'>
+    <div ref={heroRef} className='flex flex-col items-center overflow-hidden h-screen justify-center bg-transparent opacity-0 transition-opacity duration-500 ease-in'>
         <div className='mx-5 -mt-20 text-4xl font-bold font-headText tracking-wider text-center'>
             <h1 className={`text-greyWhite md:hover:animate-wiggle`}>Hey! I&apos;m <span className='text-techGreen'>Jacob</span>.</h1>
             <h1 className={`text-techGreen transition-all ease-in-out hover:drop-shadow-[3px_3px_white] hover:scale-110`}>Full-stack Developer<span className='text-jet'></span></h1>

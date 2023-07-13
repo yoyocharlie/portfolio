@@ -26,3 +26,11 @@ body {
 #avidLearner:hover {
     background-color: #64ffda;
 }
+
+.particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Add any other styles for your particles */
+    z-index: -1;
+  }
