@@ -9,9 +9,12 @@ const Form = () => {
 
     if (state.succeeded) {
         return (
-            <div>
-                <h2 className='text-techGreen text-center text-lg'>Thank you for reaching out! I&apos;ll be in touch :)</h2>
-            </div>
+            <>
+                <div>
+                    <h2 className='text-techGreen mb-5 text-center text-lg'>Thank you for reaching out! I&apos;ll be in touch :)</h2>
+                </div>
+                <Form />
+            </>
         );
     }
     
